@@ -29,4 +29,4 @@ Every software target in this portfolio undergoes a standardized methodology:
 4. **Impact Reporting:** Developing an enterprise-grade risk scorecard mapping technical findings to multi-million Euro regulatory exposures.
 
 ---
-📫 **Looking to secure your software supply chain or prepare for an EU audit?** Let's connect on [LinkedIn](YOUR_LINK_HERE) or explore my IAMComDala technical workflows.
+📫 **Looking to secure your software supply chain or prepare for an EU audit?** Let's connect on [LinkedIn](https://www.linkedin.com/in/dario-omerdic/) or [X](https://x.com/IAMComDala) 
