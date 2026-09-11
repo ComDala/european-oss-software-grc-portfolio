@@ -1,32 +1,57 @@
-### European Open-Source Software GRC Portfolio
-##### Structural Codebase Analysis & Regulatory Mapping (CRA / NIS2)
-Welcome to my Software GRC portfolio. This repository serves as a live, technical demonstration of auditing modern European open-source software (OSS) ecosystems for enterprise readiness, compliance drift, and supply chain security alignment.
+# 🇪🇺 European Open-Source Software GRC Portfolio
 
-#### 🎯 Portfolio Objectives
-* **Regulatory Compliance:** Mapping live application infrastructure to the **EU Cyber Resilience Act (CRA)** and **NIS2 Directive (Article 21)**.
-* **Supply Chain Security:** Utilizing programmatic workflows to audit third-party dependency vulnerabilities (CVEs), Software Bills of Materials (SBOMs), and repository hygiene.
-* **Operational Remediation:** Translating complex technical vulnerabilities and governance gaps into high-impact corporate risk models and upstream fixes.
+## Public-Source Software Supply Chain and Product Security Assessments
 
-#### 📊 The 10-Case Compliance Index
-| Case | Target Software | Tech Stack & Package Lockfiles | High-Risk Audit Surface | Release Velocity & Maintenance | Primary EU Regulatory Core & Deliverable |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **01** | **openDesk** | Multi-service, Helm/K8s, Container Manifests | Cross-service SSO token passing & container provenance | **Quarterly Bundles** (Low ongoing overhead) | Sovereign M365 Suite & Identity Governance (NIS2 & CRA) – [View Audit](./case-01-opendesk/) |
-| **02** | **Euro-Office / Collabora** | C++, JavaScript (package.json, CMakeLists.txt) | Document parsing buffer safety & in-transit data caching | **Bi-Monthly Releases** (Predictable) | Sovereign Document Engine & Data Minimization (GDPR & CRA) – [View Audit](./case-02-euro-office/) |
-| **03** | **Nextcloud** | PHP, Vue.js (composer.json, package.json) | Unvetted 3rd-party App Store plugins & server-side encryption | **4-Month Major Cycles** (High stability) | Cloud Collaboration & CVD (CRA Annex I & GDPR) – [View Audit](./case-03-nextcloud/) |
-| **04** | **Matomo** | PHP, JavaScript (composer.json) | Analytics opt-in consent toggles & PII storage schemas | **Monthly Patch Trains** (Low-impact fixes) | Data Governance & Telemetry (GDPR & CRA) – [View Audit](./case-04-matomo/) |
-| **05** | **Keycloak** | Java, Quarkus (pom.xml, Maven) | MFA default enforcement, OIDC/OAuth token signing, & session isolation | **Quarterly Releases** (Enterprise focus) | Enterprise IAM Controls (NIS2 Art. 21 & DORA) – [View Audit](./case-05-keycloak/) |
-| **06** | **Grafana** | Go, TypeScript (go.mod, package.json) | Unsigned community dashboard plugins & API key scope boundaries | **Monthly Releases** (Automated scanning fits well) | Observability & Steward Liability (CRA Chapter II) – [View Audit](./case-06-grafana/) |
-| **07** | **Evcc** | Go (go.mod) | Hardcoded MQTT/TLS credentials & physical charging API auth | **Monthly Point Releases** (Light codebase) | EV Charging Grid & Energy Security (NIS2) – [View Audit](./case-07-evcc/) |
-| **08** | **QGIS** | C++, Python (CMakeLists.txt, requirements.txt) | Unverified Python plugin repository & QGIS Server API endpoints | **1-Year LTR (Long-Term Release)** (Ultra-stable) | Telecom Fiber Network & Supply Chain (NIS2 & CRA) – [View Audit](./case-08-qgis/) |
-| **09** | **Proxmox VE** | Perl, C, Rust (Debian .deb packaging) | Hypervisor patch SLAs, root privileges in LXC/VM management | **Bi-Annual Major Releases** (Very low effort) | Hypervisor & VMware Migration Risk (NIS2 & CRA) – [View Audit](./case-09-proxmox/) |
-| **10** | **OPNsense** | C, PHP (FreeBSD Ports / packages) | Insecure default admin configurations & border routing crypto libraries | **Semi-Annual Majors** (Bi-weekly security hotfixes) | Network Firewall & Secure Defaults (NIS2) – [View Audit](./case-10-opnsense/) |
+This repository documents an independent portfolio of technical readiness assessments for European open-source software. The work focuses on publicly observable evidence: repository governance, dependency management, release integrity, vulnerability handling, CI/CD controls, and enterprise identity integration.
 
-#### 🛠️ The Audit & Analysis Workflow
-Every software target in this portfolio undergoes a standardized methodology:
-1. **Codebase Structural Ingestion:** Deep asset and architectural parsing using code visualization workflows.
-2. **Policy Verification:** Auditing the presence, legality, and clarity of SECURITY.md, vulnerability response SLAs, and licenses.
-3. **Dependency and Supply Chain Triage:** Evaluating package registries and lockfiles for active CVE exposure.
-4. **Impact Reporting:** Developing an enterprise-grade risk scorecard mapping technical findings to multi-million Euro regulatory exposures.
+These are **not certification audits or legal determinations**. A public repository does not reveal every organizational, contractual, operational, or production control. Completed cases therefore distinguish confirmed evidence from items that are not observable or not assessable from public sources.
 
----
-📫 **Looking to secure your software supply chain or prepare for an EU audit?** Let's connect on [LinkedIn](https://www.linkedin.com/in/dario-omerdic/)
+## 🎯 Portfolio Objectives
+
+- Build reproducible Software Bill of Materials and dependency-governance evidence.
+- Review public CI/CD, release, vulnerability-disclosure, and secure-development controls.
+- Evaluate enterprise identity capabilities including OIDC, SAML, MFA, privileged access, secrets, and workload identities.
+- Explain how technical observations may support CRA, NIS2, DORA, GDPR, or other obligations when applicability has first been established.
+- Translate validated findings into prioritized remediation and verification steps.
+
+## Assessment Roadmap
+
+| Case | Project | Bounded assessment focus | Stage | Report |
+| :---: | :--- | :--- | :---: | :---: |
+| 01 | **openDesk** | Multi-repository architecture, container provenance and SSO boundaries | ⚪ Planned | — |
+| 02 | **Collabora Online** | Dependency governance, release integrity and document-processing boundaries | ⚪ Planned | — |
+| 03 | **Nextcloud** | Vulnerability handling, application ecosystem, dependency and release evidence | ⚪ Queued | — |
+| 04 | **Matomo** | Dependency governance, telemetry documentation, CI/CD and disclosure controls | 🟡 Next | — |
+| 05 | **Keycloak** | Identity security, OIDC/OAuth configuration, release and vulnerability governance | ⚪ Queued | — |
+| 06 | **Grafana** | Plugin ecosystem, release provenance and service/API identities | ⚪ Planned | — |
+| 07 | **evcc** | Go dependency governance, secrets, updates and disclosure processes | ⚪ Planned | — |
+| 08 | **QGIS** | Plugin ecosystem, release integrity and QGIS Server exposure | ⚪ Planned | — |
+| 09 | **Proxmox VE** | Multi-package release governance, security updates and privileged operations | ⚪ Planned | — |
+| 10 | **OPNsense** | Secure defaults, update channels, packages and firewall administration | ⚪ Planned | — |
+
+**Stage legend:** ⚪ planned or queued · 🟡 next or in progress · 🟢 completed. The Report column is linked only after a case contains meaningful published work.
+
+A case will be marked **Completed** only after the report identifies its target version and commit, includes an evidence register and reproducible artifacts, records limitations, and validates every published finding.
+
+## Standard Method
+
+1. **Scope and applicability** - define the product, repository set, version, intended use scenario, legal roles, exclusions, and assumptions.
+2. **Evidence collection** - inspect source, documentation, manifests, lockfiles, workflows, releases, advisories, and public governance material.
+3. **Technical analysis** - generate SBOM and dependency artifacts; examine disclosure, CI/CD, release-integrity, and identity controls.
+4. **Validation** - reproduce observations, remove false positives, record confidence, and distinguish absence of evidence from evidence of absence.
+5. **Risk and regulatory mapping** - explain technical and business relevance without treating a public-source review as a conformity assessment.
+6. **Remediation and disclosure** - provide prioritized actions and use private coordinated-disclosure channels for security-sensitive findings.
+
+## Evidence Status Vocabulary
+
+- **Confirmed** - directly supported by reproducible evidence.
+- **Partial** - some elements are present, but the control is incomplete or uncertain.
+- **Not observed** - not found within the defined public scope; this does not prove the control does not exist elsewhere.
+- **Not assessable** - requires private organizational, contractual, repository-setting, or production evidence.
+- **Not applicable** - excluded after a documented applicability decision.
+
+## Responsible Disclosure
+
+Potential vulnerabilities will not be published as compliance findings before coordinated disclosure. Security-sensitive observations will follow the target project's documented reporting channel. Public case studies will contain only evidence appropriate for disclosure.
+
+📫 [LinkedIn](https://www.linkedin.com/in/dario-omerdic/)
