@@ -21,8 +21,8 @@ These are **not certification audits or legal determinations**. A public reposit
 | 01 | **openDesk** | Multi-repository architecture, container provenance and SSO boundaries | ⚪ Planned | — |
 | 02 | **Collabora Online** | Dependency governance, release integrity and document-processing boundaries | ⚪ Planned | — |
 | 03 | **Nextcloud** | Vulnerability handling, application ecosystem, dependency and release evidence | ⚪ Queued | — |
-| 04 | **Matomo** | Dependency governance, telemetry documentation, CI/CD and disclosure controls | 🟡 Next | — |
-| 05 | **Keycloak** | Identity security, OIDC/OAuth configuration, release and vulnerability governance | ⚪ Queued | — |
+| 04 | **Matomo** | Dependency governance, telemetry documentation, CI/CD and disclosure controls | ⚪ Queued | — |
+| 05 | **Keycloak** | Identity security, OIDC/OAuth configuration, release and vulnerability governance | 🟡 Next | — |
 | 06 | **Grafana** | Plugin ecosystem, release provenance and service/API identities | ⚪ Planned | — |
 | 07 | **evcc** | Go dependency governance, secrets, updates and disclosure processes | ⚪ Planned | — |
 | 08 | **QGIS** | Plugin ecosystem, release integrity and QGIS Server exposure | ⚪ Planned | — |
@@ -54,4 +54,4 @@ A case will be marked **Completed** only after the report identifies its target 
 
 Potential vulnerabilities will not be published as compliance findings before coordinated disclosure. Security-sensitive observations will follow the target project's documented reporting channel. Public case studies will contain only evidence appropriate for disclosure.
 
-📫 [LinkedIn](https://www.linkedin.com/in/dario-omerdic/)
+📫 [Connect with me on LinkedIn](https://www.linkedin.com/in/dario-omerdic/)
